@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: html-result-api
+    name: ssc-app
     runtime: python
     plan: free
-    repository: Biral1/ssc
+    repository: https://github.com/Biral1/ssc
     branch: main
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python app.py"
