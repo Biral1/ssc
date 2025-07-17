@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: html-result-api
+    runtime: python
+    plan: free
+    repository: Biral1/ssc
+    branch: main
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: PORT
+        value: 10000
